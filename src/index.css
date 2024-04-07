@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 * {
-  transition:.25s ease-out;
+  transition: 0.25s ease-out !important;
 }
 a {
   font-weight: 500;

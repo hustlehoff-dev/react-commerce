@@ -67,7 +67,7 @@ const Products = () => {
           src="../../../img/woman_leggins_1.webp"
           alt="Image of the category"
         />
-        <ProductLoop />
+        <ProductLoop categoryId={categoryId} maxPrice={maxPrice} sort={sort} />
       </div>
     </div>
   );

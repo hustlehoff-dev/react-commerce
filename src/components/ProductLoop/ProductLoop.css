@@ -1,1 +1,5 @@
-/*# sourceMappingURL=ProductLoop.css.map */
+.product-loop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=ProductLoop.css.map */
