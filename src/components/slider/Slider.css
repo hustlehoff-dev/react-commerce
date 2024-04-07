@@ -1,0 +1,39 @@
+.kadi-slider {
+  height: calc(100vh - 100px);
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+.kadi-slider .wrapper {
+  width: 300vw;
+  display: flex;
+}
+.kadi-slider .wrapper img {
+  width: 100vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.kadi-slider .buttons {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.kadi-slider .buttons .icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #222;
+  padding: 10px 20px;
+  background: transparent;
+}
+.kadi-slider .buttons .icon:hover {
+  background: rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=Slider.css.map */

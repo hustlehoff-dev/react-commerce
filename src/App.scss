@@ -1,0 +1,11 @@
+.app {
+  width: 95vw;
+  max-width: 2560px;
+  overflow: hidden;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    height: unset;
+  }
+}

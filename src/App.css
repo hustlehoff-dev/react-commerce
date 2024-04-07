@@ -1,7 +1,10 @@
-.App {
-  width:100vw;
-  max-width:800px;
-
-  display:flex;
-  align-items:center;
+.app {
+  width: 95vw;
+  max-width: 2560px;
+  overflow: hidden;
 }
+.app .link {
+  text-decoration: none;
+  color: inherit;
+  height: unset;
+}/*# sourceMappingURL=App.css.map */
