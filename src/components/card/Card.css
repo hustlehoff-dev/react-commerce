@@ -13,6 +13,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card .image img.firstImage {
   opacity: 1;
