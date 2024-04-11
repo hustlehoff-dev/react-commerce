@@ -2,14 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import { ShoppingCart } from "phosphor-react";
 import "./navbar.css";
-
+import Cart from "../cart/Cart";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { useState } from "react";
 
 const Navbar = () => {
+  
+  const [cartOpen, setCartOpen] = useState(false);
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -68,13 +72,14 @@ const Navbar = () => {
             <SearchIcon />
             <PersonOutlineOutlinedIcon />
             <FavoriteBorderOutlinedIcon />
-            <div className="cart">
+            <div className="cartIcon" onClick={()=>setCartOpen(!cartOpen)}>
               <ShoppingCartOutlinedIcon />
               <span>0</span>
             </div>
           </div>
         </div>
       </div>
+      {cartOpen && <Cart/>}
     </div>
   );
 };

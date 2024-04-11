@@ -1,1 +1,103 @@
-/*# sourceMappingURL=Product.css.map */
+.product-page {
+  padding: 20px 50px;
+  display: flex;
+  gap: 50px;
+}
+.product-page .sidebar {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+.product-page .sidebar .productThumbs {
+  flex: 1;
+}
+.product-page .sidebar .productThumbs img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.product-page .sidebar .productThumbs img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+}
+.product-page .sidebar .productImage {
+  flex: 5;
+}
+.product-page .sidebar .productImage img {
+  width: 100%;
+  max-height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-page .productMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-page .productMain .price {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ea7b9b;
+}
+.product-page .productMain h1 {
+  margin: 0;
+}
+.product-page .productMain p {
+  text-align: justify;
+  margin: 0;
+  color: grey;
+}
+.product-page .productMain .orderQuantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-page .productMain .orderQuantity button {
+  outline: 0;
+  font-weight: 600;
+}
+.product-page .productMain .orderQuantity span {
+  border: 1px solid #ccc;
+  padding: 0.6em 1.2em;
+  border-radius: 32px;
+  font-weight: 600;
+  display: flex;
+}
+.product-page .productMain .addToCart {
+  max-width: 165px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ea7b9b;
+  color: #fff;
+}
+.product-page .productMain .addToCart:hover {
+  background-color: #e6658a;
+}
+.product-page .productMain .wishCompare {
+  display: flex;
+  gap: 20px;
+}
+.product-page .productMain .wishCompare * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #ea7b9b;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product-page .productMain .wishCompare *:hover {
+  color: #e6658a;
+}
+.product-page .productMain .productInfo {
+  color: grey;
+}
+.product-page .productMain .productDetails {
+  color: grey;
+}/*# sourceMappingURL=Product.css.map */

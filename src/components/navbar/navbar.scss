@@ -1,6 +1,10 @@
 .navbar {
   height: 64px;
-
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 96.5%;
+  max-width: 2560px;
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -34,7 +38,7 @@
         gap: 15px;
         cursor: pointer;
         color: #777;
-        .cart {
+        .cartIcon {
           position: relative;
           span {
             position: absolute;

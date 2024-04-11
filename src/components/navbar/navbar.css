@@ -1,5 +1,10 @@
 .navbar {
   height: 64px;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 96.5%;
+  max-width: 2560px;
 }
 .navbar .wrapper {
   padding: 10px 30px;
@@ -35,10 +40,10 @@
   cursor: pointer;
   color: #777;
 }
-.navbar .wrapper .right .icons .cart {
+.navbar .wrapper .right .icons .cartIcon {
   position: relative;
 }
-.navbar .wrapper .right .icons .cart span {
+.navbar .wrapper .right .icons .cartIcon span {
   position: absolute;
   display: flex;
   align-items: center;

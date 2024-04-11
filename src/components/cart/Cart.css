@@ -1,0 +1,80 @@
+.cart {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 75px;
+  background: #fff;
+  width: 320px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  animation: showUp 0.5s forwards;
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    right: 10px;
+  }
+  100% {
+    opacity: 1;
+    right: 20px;
+  }
+}
+.cart h3 {
+  color: grey;
+  font-weight: 400;
+  margin: 0;
+}
+.cart .cartItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart .cartItem .cartItemImage {
+  flex: 1;
+  display: flex;
+}
+.cart .cartItem .cartItemImage img {
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart .cartItem .cartItemContent {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: grey;
+}
+.cart .cartItem .cartItemRemove {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  color: red;
+  cursor: pointer;
+}
+.cart .cartItem .cartItemRemove:hover {
+  transform: scale(1.1);
+}
+.cart span {
+  display: flex;
+  justify-content: space-between;
+  color: #111;
+  font-weight: 600;
+}
+.cart button {
+  width: 60%;
+  background: #ea7b9b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+}/*# sourceMappingURL=Cart.css.map */
