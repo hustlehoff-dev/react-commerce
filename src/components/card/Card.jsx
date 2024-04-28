@@ -10,10 +10,10 @@ const Card = ({ item }) => {
           <img src={item.img} alt="Product image" className="firstImage" />
           <img src={item.img2} alt="Product image" className="secondImage" />
         </div>
-        <h2 className="title">{item.title}</h2>
+        <h2 className="title">{item.attributes.title}</h2>
         <div className="price">
-          <span>{item.oldPrice}$</span>
-          <span>{item.price}$</span>
+          <span>{item.attributes.oldPrice}$</span>
+          <span>{item.attributes.price}$</span>
         </div>
       </div>
     </Link>

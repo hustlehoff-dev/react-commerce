@@ -1,46 +1,15 @@
 import React from "react";
 import "./Featured.css";
 import Card from "../card/Card";
+import useFetch from "../../hooks/useFetch";
 
 const Featured = ({ type }) => {
-  const data = [
-    {
-      id: 1,
-      img: "../../../img/woman_1.webp",
-      img2: "../../../img/woman_1_1.webp",
-      title: "Product Mockup",
-      isNew: true,
-      oldPrice: 249,
-      price: 199,
-    },
-    {
-      id: 2,
-      img: "../../../img/woman_8.webp",
-      img2: "../../../img/woman_8_1.webp",
-      title: "Product Mockup",
-      isNew: true,
-      oldPrice: 249,
-      price: 199,
-    },
-    {
-      id: 3,
-      img: "../../../img/woman_3.webp",
-      img2: "../../../img/woman_3_1.webp",
-      title: "Product Mockup",
-      isNew: true,
-      oldPrice: 249,
-      price: 199,
-    },
-    {
-      id: 4,
-      img: "../../../img/woman_7.webp",
-      img2: "../../../img/woman_7_1.webp",
-      title: "Product Mockup",
-      isNew: true,
-      oldPrice: 249,
-      price: 199,
-    },
-  ];
+  const { loading, error, data } = useFetch(
+    "http://localhost:1337/api/products?populate=*"
+  );
+  if (loading) return <p>Loading..</p>;
+  if (error) return <p>Error :/</p>;
+  console.log(data.data);
   return (
     <div className="featured">
       <div className="top">
@@ -54,8 +23,8 @@ const Featured = ({ type }) => {
         </p>
       </div>
       <div className="bottom">
-        {data.map((item) => (
-          <Card item={item} key={item.id} />
+        {data.data.map((product) => (
+          <Card item={product} key={product.id} />
         ))}
       </div>
     </div>
